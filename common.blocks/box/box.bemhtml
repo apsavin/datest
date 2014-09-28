@@ -1,0 +1,14 @@
+block('box')(
+    content()(function () {
+        return [
+            {
+                elem: 'header',
+                content: this.ctx.header
+            },
+            {
+                elem: 'content',
+                content: this.ctx.content
+            }
+        ];
+    })
+);

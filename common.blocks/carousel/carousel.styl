@@ -1,0 +1,54 @@
+.carousel {
+  height: 148px;
+  position: relative;
+}
+
+.carousel__wrapper {
+  background: #c3baa7;
+  padding: 0 18px;
+  position: absolute;
+  left: 16px;
+  border-radius: 10px;
+}
+
+.carousel__viewport {
+  overflow: hidden;
+  height: 111px;
+  width: 435px;
+  padding: 18px 0;
+  margin: 0 18px;
+  position: relative;
+}
+
+.carousel__list {
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+}
+
+.carousel__item {
+  border-radius: 10px;
+  margin-right: 16px;
+}
+
+.carousel__item:last-child {
+  margin-right: 0;
+}
+
+.carousel__left, .carousel__right {
+  position: absolute;
+  display: block;
+  top: 50%;
+  border-radius: 10px;
+  margin-top: -22px;
+  padding: 15px 10px;
+  height: auto;
+  font-size: inherit;
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.carousel__right {
+  right: 16px;
+}

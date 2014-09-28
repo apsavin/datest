@@ -1,0 +1,12 @@
+block('logo-text')(
+    content()([
+        {
+            elem: 'title',
+            content: 'X-PLOSION'
+        },
+        {
+            elem: 'desc',
+            content: 'SODA THAT POPS, FLAVORS THAT EXPLODE'
+        }
+    ])
+);

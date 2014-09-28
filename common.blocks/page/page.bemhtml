@@ -1,0 +1,8 @@
+block('page').def()(function () {
+    var ctx = this.ctx;
+    ctx.content = {
+        elem: 'wrapper',
+        content: ctx.content
+    };
+    applyNext();
+});

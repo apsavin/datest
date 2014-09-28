@@ -1,0 +1,35 @@
+block('carousel')(
+    js()(true),
+    content()(function () {
+        return [
+            {
+                elem: 'left'
+            },
+            {
+                elem: 'wrapper',
+                content: {
+                    elem: 'viewport',
+                    content: {
+                        elem: 'list',
+                        content: this.ctx.items.map(function (url) {
+                            return {
+                                block: 'image',
+                                url: url,
+                                mix: {
+                                    block: 'carousel',
+                                    elem: 'item'
+                                }
+                            }
+                        })
+                    }
+                }
+            },
+            {
+                elem: 'right'
+            }
+        ];
+    }),
+    elem('right')(tag()(''), content()({block: 'button', mix: {block: 'carousel', elem: 'right'}, content: '>'})),
+    elem('left')(tag()(''), content()({block: 'button', mix: {block: 'carousel', elem: 'left'}, content: '<'}))
+);
+

@@ -1,0 +1,30 @@
+block('social-icons')(
+    content()([
+        {
+            elem: 'fb',
+            content: 'Facebook',
+            mix: {
+                elem: 'icon'
+            }
+        },
+        {
+            elem: 'tw',
+            content: 'Twitter',
+            mix: {
+                elem: 'icon'
+            }
+        },
+        {
+            elem: 'g',
+            content: 'Google+',
+            mix: {
+                elem: 'icon'
+            }
+        }
+    ]),
+    elemMatch(function () {
+        return this.ctx.elem;
+    })(
+        tag()('span')
+    )
+);

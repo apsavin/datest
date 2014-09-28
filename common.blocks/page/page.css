@@ -1,0 +1,8 @@
+.page {
+    background: linear-gradient(to bottom, #d5ccb9, #e5dfd2 100px);
+    font-family: sans-serif;
+}
+.page__wrapper {
+    width: 812px;
+    margin: 0 auto;
+}

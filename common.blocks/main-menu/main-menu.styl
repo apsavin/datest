@@ -1,0 +1,29 @@
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-menu__item {
+  height: 48px;
+  line-height: 48px;
+  color: white;
+  flex: 1;
+  text-align: center;
+  border-right: 1px dashed #ccc;
+  background: $pink_gradient;
+  font-size: 10px;
+}
+
+.main-menu__item:last-child {
+  border-right: none;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main-menu__item:first-child {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.main-menu__item_selected {
+  background: linear-gradient(to bottom, #4e442f, #2c2415, #272114);
+}

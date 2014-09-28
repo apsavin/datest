@@ -1,0 +1,23 @@
+.social-icons {
+    display: flex;
+}
+
+.social-icons__icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 19px;
+    padding: 5px 0 0 24px;
+    flex: 1;
+}
+
+.social-icons__fb {
+    background-image: url('social-icons__fb.png');
+}
+
+.social-icons__tw {
+    background-image: url('social-icons__tw.png');
+}
+
+.social-icons__g {
+    background-image: url('social-icons__g.png');
+}

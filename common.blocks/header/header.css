@@ -1,0 +1,19 @@
+.header {
+    overflow: hidden;
+    margin-top: 20px;
+}
+.header__logo-text {
+    float: left;
+}
+.header__logo-image {
+    margin-left: 140px;
+    display: block;
+    float: left;
+}
+.header__search-form {
+    float: right;
+    padding-top: 12px;
+}
+.header__line {
+    margin-bottom: 30px;
+}

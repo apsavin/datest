@@ -1,0 +1,17 @@
+block('main-menu')(
+    content()(function () {
+        return this.ctx.items.map(function (item, i) {
+            return {
+                block: 'link',
+                mix: {
+                    block: 'main-menu',
+                    elem: 'item',
+                    elemMods: {
+                        selected: !i
+                    }
+                },
+                content: item
+            }
+        });
+    })
+);

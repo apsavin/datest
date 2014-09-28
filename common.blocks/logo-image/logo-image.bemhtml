@@ -1,0 +1,15 @@
+block('logo-image')(
+    tag()(''),
+    content()(function () {
+        var mix = [this.ctx.mix, {
+            block: 'logo-image'
+        }];
+        return {
+            block: 'image',
+            url: '../../../common.blocks/logo-image/logo-image.png',
+            width: '198px',
+            height: '51px',
+            mix: mix
+        }
+    })
+);
